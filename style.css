@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Replace with the correct font if specified */
+}
+
+body {
+    background-color: #1c0035; /* Adjusted background color */
+}
+
+.container {
+    color: white;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("./images/background-desktop.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+
+header img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.text-container h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.text-container p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+form {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px 20px;
+    border-radius: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+form .upload {
+    text-align: center;
+    width: 100%;
+    border: 2px dashed rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(60deg, rgba(139, 37, 212, 0.3), rgba(82, 82, 206, 0.3));
+    margin-bottom: 10px;
+}
+
+form .upload img {
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+form .upload p {
+    font-size: 0.9rem;
+}
+
+form input {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 0.9rem;
+    color: #333;
+    background: #fff;
+}
+
+form .note {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.submit {
+    margin-top: 20px;
+}
+
+.submit button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.submit button:hover {
+    background-color: darkred;
+}
+
+.bottom-image {
+    position: absolute;
+    
+    bottom: -180px;
+    left: 0;
+    width: 600px;
+    height: auto;
+    z-index: 1;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .text-container h1 {
+        font-size: 2rem;
+    }
+
+    .text-container p {
+        font-size: 0.9rem;
+    }
+
+    form {
+        padding: 20px 15px;
+        max-width: 400px;
+    }
+
+    form .upload {
+        padding: 15px;
+    }
+
+    form input {
+        font-size: 0.85rem;
+    }
+
+    form .note {
+        font-size: 0.75rem;
+    }
+
+    .submit button {
+        font-size: 0.9rem;
+    }
+
+    .bottom-image {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .text-container p {
+        font-size: 0.8rem;
+    }
+
+    form {
+        padding: 15px 10px;
+    }
+
+    form label {
+        font-size: 0.8rem;
+    }
+
+    form .upload {
+        padding: 10px;
+    }
+
+    form .upload p {
+        font-size: 0.8rem;
+    }
+
+    form input {
+        font-size: 0.8rem;
+        height: 35px;
+    }
+
+    form .note {
+        font-size: 0.7rem;
+    }
+
+    .submit button {
+        font-size: 0.85rem;
+    }
+
+    .bottom-image {
+        width: 200px;
+    }
+}
